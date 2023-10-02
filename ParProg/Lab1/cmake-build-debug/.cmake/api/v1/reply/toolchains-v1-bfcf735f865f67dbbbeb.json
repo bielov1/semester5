@@ -1,0 +1,79 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/Users/Oleg/bin/mygcc/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+						"C:/Users/Oleg/bin/mygcc/mingw64/include",
+						"C:/Users/Oleg/bin/mygcc/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+						"C:/Users/Oleg/bin/mygcc/mingw64/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/Users/Oleg/bin/mygcc/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0",
+						"C:/Users/Oleg/bin/mygcc/mingw64/lib/gcc",
+						"C:/Users/Oleg/bin/mygcc/mingw64/x86_64-w64-mingw32/lib",
+						"C:/Users/Oleg/bin/mygcc/mingw64/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"mingw32",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"kernel32",
+						"mcfgthread",
+						"kernel32",
+						"ntdll",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"mingw32",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"kernel32",
+						"mcfgthread",
+						"kernel32",
+						"ntdll"
+					]
+				},
+				"path" : "C:/Users/Oleg/bin/mygcc/mingw64/bin/gcc.exe",
+				"version" : "13.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "C:/Users/Oleg/bin/mygcc/mingw64/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
