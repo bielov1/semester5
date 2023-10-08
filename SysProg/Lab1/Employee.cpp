@@ -10,15 +10,15 @@ namespace Records
     Employee::Employee()
     {
 	    FirstAndLastName = "";
-        age = 0;
-        Salary = 0;
+        age = -1;
+        Salary = -1;
         EmployeesId = 1000;
         fHired = false;
     }
 
-    void Employee :: setEmployeesId()
+    void Employee :: setEmployeesId(int eId)
     {
-		EmployeesId += 1;
+		EmployeesId = eId;
     }
 
     void Employee :: setFirstAndLastName(std::string name)
@@ -51,5 +51,15 @@ namespace Records
     std::string Employee :: getFirstAndLastName()
     {
 		return FirstAndLastName;
+    }
+
+    int Employee :: getAge()
+    {
+		return age;
+    }
+
+    int Employee :: getSalary()
+    {
+		return Salary;
     }
 }

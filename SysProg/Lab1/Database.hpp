@@ -17,6 +17,7 @@ namespace Records{
         void updateEmployeesInfo(int inEmployeesId);
         Employee* addEmployee();
         int findIds();
+        void listAllEmployees();
 		#else
         void updateEmployeesInfo();
         void addEmployee();

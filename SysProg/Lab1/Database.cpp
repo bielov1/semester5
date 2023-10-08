@@ -23,9 +23,44 @@ namespace Records
         
         for(int i = 0; i < nextSlot; ++i){
 			if(mEmployees[i]->getEmployeesId() == inEmployeesId){
-							
-            } else {
-                std::cout << "Cannot find an employee with " << inEmployeesId << " id" <<  std::endl;
+                int choice;
+                std::cout << "What's the type of info would you like to update?" << std::endl;
+                std::cout << "1. Employees ID" << std::endl;
+                std::cout << "2. Employees fullname" << std::endl;
+                std::cout << "3. Employees age" << std::endl;
+
+                std::cin >> choice;
+
+                switch(choice){
+                case 1:
+                {
+                    int newId;
+                    std::cout << "Enter new employees ID: ";
+                    std::cin >> newId;
+                    mEmployees[i]->setEmployeesId(newId);
+                    break;
+                }
+                case 2:
+                    {
+                    std::string newFullname;
+                    std::cout << "Enter new employees fullname: ";
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			    	std::getline(std::cin, newFullname);
+                    mEmployees[i]->setFirstAndLastName(newFullname);
+                    break;
+                    }
+                case 3:
+                    {
+					int newAge;
+                    std::cout << "Enter new employees age: ";
+                    std::cin >> newAge;
+                    mEmployees[i]->setAge(newAge);
+                    break;
+                    }
+                default:
+                    std::cout << "Unknown selection" << std::endl;
+					updateEmployeesInfo(inEmployeesId);
+                }
             }
         }
     }
@@ -47,16 +82,17 @@ namespace Records
 
 	    std::cout << "Employee's age? ";
    		 std::cin >> age;
-	    // You could add input validation here, e.g., age > 0
 
 	    std::cout << "What's the salary? ";
 	    std::cin >> sal;
-	    // You could add input validation here too, e.g., salary >= 0
+	   
 
 	    mEmployees[nextSlot] = new Employee();
 	    Employee* theEmployee = mEmployees[nextSlot++];
 
-	    theEmployee->setEmployeesId();
+		static int id = 1000;
+        
+	    theEmployee->setEmployeesId(id++);
 	    theEmployee->setFirstAndLastName(fullname);
 	    theEmployee->setAge(age);
  	    theEmployee->setSalary(sal);
@@ -77,6 +113,20 @@ namespace Records
         std::cin >> id;
 
         return id;
+    }
+
+    void Database :: listAllEmployees()
+    {
+		std::cout << "  ID        Name         Age     Salary" << std::endl;
+		for(int i = 0; i < nextSlot; ++i){
+            std::cout << "\n";
+            std::cout << mEmployees[i]->getEmployeesId() << "  ";
+            std::cout << mEmployees[i]->getFirstAndLastName() << "  ";
+            std::cout << mEmployees[i]->getAge() << "  ";
+            std::cout << mEmployees[i]->getSalary() << "  ";
+            std::cout << "\n";
+        }
+
     }
 
 }

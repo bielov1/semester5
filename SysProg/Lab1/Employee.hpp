@@ -21,7 +21,7 @@ namespace Records
         void setFirstAndLastName(std::string name);
         std::string getFirstAndLastName();
 
-        void setEmployeesId();
+        void setEmployeesId(int eId);
         int getEmployeesId();
 
         void setSalary(int inSetSalary);

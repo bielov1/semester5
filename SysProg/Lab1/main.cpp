@@ -40,6 +40,7 @@ int main()
             myDB.updateEmployeesInfo(emId);
             break;
         case 2:
+            myDB.listAllEmployees();
             break;
         case 3:
             myDB.addEmployee();
