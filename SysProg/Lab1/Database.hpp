@@ -2,6 +2,7 @@
 #define _DATABASE_HPP
 
 #include <iostream>
+#include <string>
 #include "Employee.hpp"
 
 namespace Records{
@@ -12,15 +13,16 @@ namespace Records{
 	public:
     	Database();
       	~Database();
-		#if 0
-        Employee& updateEmployeesInfo();
-        Employee& addEmployee();
+		#if 1
+        void updateEmployeesInfo(int inEmployeesId);
+        Employee* addEmployee();
+        int findIds();
 		#else
         void updateEmployeesInfo();
         void addEmployee();
         #endif
     protected:
-        Employee mEmployees[kMaxEmployees];
+        Employee* mEmployees[kMaxEmployees];
         int nextEmployeesNumber;
         int nextSlot;
 	};

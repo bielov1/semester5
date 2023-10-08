@@ -33,13 +33,16 @@ int main()
 
     while(!done){
 		int selection = displayMenu();
+        int emId;
         switch(selection){
         case 1:
-            myDB.updateEmployeesInfo();
+			emId = myDB.findIds();
+            myDB.updateEmployeesInfo(emId);
             break;
         case 2:
             break;
         case 3:
+            myDB.addEmployee();
             break;
         case 4:
             break;
