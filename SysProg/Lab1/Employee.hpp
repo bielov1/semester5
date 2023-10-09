@@ -11,8 +11,8 @@ namespace Records
 		Employee();
 
     #if 1
-		void promote();
-        void demote();
+		void promote(int perc);
+        void demote(int perc);
         void hire();
         void fire();
         void listEmployeesInfo();

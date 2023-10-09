@@ -1,8 +1,11 @@
 #ifndef _DATABASE_HPP
 #define _DATABASE_HPP
 
+
 #include <iostream>
 #include <string>
+#include <limits>
+#include <iomanip>
 #include "Employee.hpp"
 
 namespace Records{
@@ -18,6 +21,7 @@ namespace Records{
         Employee* addEmployee();
         int findIds();
         void listAllEmployees();
+        void doFireEmployee(int inEmployeesId);
 		#else
         void updateEmployeesInfo();
         void addEmployee();

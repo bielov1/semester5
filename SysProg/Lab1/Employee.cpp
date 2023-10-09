@@ -31,16 +31,39 @@ namespace Records
 		Salary = inSetSalary;
     }
 
-    void Employee :: hire()
-    {
-		fHired = true;
-    }
-
     void Employee :: setAge(int inSetAge)
     {
 		age = inSetAge;
     }
 
+    void Employee :: hire()
+    {
+		fHired = true;
+    }
+
+    void Employee :: fire()
+    {
+        
+		fHired = false;
+    }
+
+    void Employee :: promote(int perc)
+    {
+        int curr = getSalary();
+        int newSal = curr + curr*((double)perc/100);
+        std::cout << newSal << std::endl;
+	    setSalary(newSal); 
+    }
+
+    void Employee :: demote(int perc)
+    {
+   		int curr = getSalary();
+        int newSal = curr - curr*((double)perc/100);
+        std::cout << newSal << std::endl;
+	    setSalary(newSal); 
+        
+    }
+   
     // Accessors
 
     int Employee :: getEmployeesId()
@@ -61,5 +84,10 @@ namespace Records
     int Employee :: getSalary()
     {
 		return Salary;
+    }
+
+    bool Employee :: isHired()
+    {
+		return fHired;
     }
 }
