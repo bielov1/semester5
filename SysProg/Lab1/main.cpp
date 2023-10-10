@@ -16,6 +16,7 @@ int displayMenu()
     cout << "2. List all employees" << endl;
     cout << "3. Hire a new employee"<< endl;
     cout << "4. Fire an employee" << endl;
+    cout << "5. Autofill" << endl;
     cout << "0. Quit" << endl;
     cout << endl;
     cout << "-->";
@@ -48,6 +49,9 @@ int main()
         case 4:
             emId = myDB.findIds();
             myDB.doFireEmployee(emId);
+            break;
+        case 5:
+            myDB.useExistingData();
             break;
         case 0:
             done = true;

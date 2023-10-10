@@ -6,7 +6,16 @@
 #include <map>
 
 using namespace std;
-        
+
+const int ids[5] = {1000, 1001, 1002, 1003, 1004};
+const string fnames[5] = {"Oleh Bielov", "Anna Vlada", "Vlad Vlad", "Olga Kivi", "Danya Doom"};
+const int ages[5] = {21, 23, 91, 71, 24};
+const int sals[5] = {10000, 12000, 41000, 71111, 50000};
+const string genders[5] = {"male", "female", "male", "female", "male"};
+const string addrs[5] = {"Tarasivka", "21 Avenue", "21 Bake Street", "none", "none"};
+const int classifs[5] = {8, 88, 724, 33, 33};
+const long int pds[5] = {100010001100, 921019917777, 929292929292, 100055551000, 924455551777};
+
 namespace Records
 {
     int nextEmployeesNumber;
@@ -161,9 +170,13 @@ namespace Records
 
         Employee* theEmployee = readEmployeeDetails();
         mEmployees[nextSlot] = theEmployee;
-        static int id = 1000;
-        theEmployee->setEmployeesId(id++);
 
+        static int id = 1000;
+        for(int i = 0; i < nextSlot; ++i){
+			if(id == mEmployees[i]->getEmployeesId())
+                id++;
+        }
+        theEmployee->setEmployeesId(id);
         
         nextSlot++;
         return theEmployee;
@@ -181,6 +194,7 @@ namespace Records
         	}
     	} while (num <= 0);
     	cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
     	return num;
 	}
 
@@ -190,7 +204,6 @@ namespace Records
 		string fullname, address, gender;
     	int age, sal, classifier;
     	long int pd;
-
 		cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         	
@@ -206,12 +219,13 @@ namespace Records
 
     	age = getPositiveNumber("Enter employee's age: ");
     	sal = getPositiveNumber("Enter employee's salary: ");
-        pd = getPositiveNumber("Enter employee's passprot details: ");
-        
+        pd = getPositiveNumber("Enter employee's passport details: ");
+       
         classifier = findRole();
         
 	    Employee* theEmployee = new Employee;        
 
+        
 	    theEmployee->setFirstAndLastName(fullname);
 	    theEmployee->setAge(age);
  	    theEmployee->setSalary(sal);
@@ -279,6 +293,26 @@ namespace Records
         return id;
     }
 
+
+	void Database::useExistingData()
+    {
+	    for(int i = 0; i < 5; ++i){
+        	Employee* theEmployee = new Employee;
+        	theEmployee->setEmployeesId(ids[i]);
+        	theEmployee->setFirstAndLastName(fnames[i]);
+        	theEmployee->setAge(ages[i]);
+        	theEmployee->setSalary(sals[i]);
+        	theEmployee->setGender(genders[i]);
+        	theEmployee->setPasspDetails(pds[i]);
+        	theEmployee->setAddress(addrs[i]);
+        	theEmployee->setRole(classifs[i]);
+        	theEmployee->hire();
+        	mEmployees[nextSlot++] = theEmployee;
+    	}
+    }
+    
+
+    
 
 	void Database::doFireEmployee(int inEmployeesId)
     {
