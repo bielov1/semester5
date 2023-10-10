@@ -5,6 +5,11 @@
 #include "Database.hpp"
 #include <map>
 
+
+/*
+ * Database.cpp
+ * Written by Oleh Bielov
+ */
 using namespace std;
         
 namespace Records
