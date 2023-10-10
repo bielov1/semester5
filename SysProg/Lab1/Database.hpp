@@ -8,6 +8,7 @@
 #include <iomanip>
 #include "Employee.hpp"
 
+
 namespace Records{
 	class Database
 	{
@@ -25,6 +26,7 @@ namespace Records{
         void doFireEmployee(int inEmployeesId);
         Employee* readEmployeeDetails();
         int long getPositiveNumber(const std::string &prompt);
+        void useExistingData();
     protected:
         Employee* mEmployees[kMaxEmployees];
         int nextEmployeesNumber;

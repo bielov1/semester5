@@ -4,8 +4,9 @@
 #include <iomanip>
 #include "Database.hpp"
 #include <map>
-using namespace std;
 
+using namespace std;
+        
 namespace Records
 {
     int nextEmployeesNumber;
@@ -287,7 +288,7 @@ namespace Records
         }
 
     }
-    
+
     void Database::listAllEmployees()
     {
         int colOne = 8;
@@ -324,4 +325,3 @@ namespace Records
     }
 
 }
-
