@@ -225,7 +225,6 @@ namespace Records
         
 	    Employee* theEmployee = new Employee;        
 
-        
 	    theEmployee->setFirstAndLastName(fullname);
 	    theEmployee->setAge(age);
  	    theEmployee->setSalary(sal);
