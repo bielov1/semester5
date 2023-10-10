@@ -29,7 +29,7 @@ namespace Records{
         void doFireEmployee(int inEmployeesId);
         Employee* readEmployeeDetails();
         int long getPositiveNumber(const std::string &prompt);
-        void useExistingData();
+        void  useExistingData();
     protected:
         Employee* mEmployees[kMaxEmployees];
         int nextEmployeesNumber;

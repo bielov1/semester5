@@ -13,7 +13,7 @@ namespace Records
     public: 
 		Employee();
 
-    #if 1
+
 		void promote(int perc);
         void demote(int perc);
         void hire();
@@ -57,7 +57,6 @@ namespace Records
         int Salary;
         long int passpdetails;
         bool fHired;
-    #endif
     };
 }
 
