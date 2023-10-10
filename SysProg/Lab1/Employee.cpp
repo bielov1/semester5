@@ -1,7 +1,10 @@
 #include <iostream>
 
 #include "Employee.hpp"
-
+/*
+ * Employee.cpp
+ * Written by Oleh Bielov
+ */
 using namespace std;
 
 namespace Records

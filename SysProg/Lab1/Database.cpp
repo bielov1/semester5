@@ -5,6 +5,11 @@
 #include "Database.hpp"
 #include <map>
 
+
+/*
+ * Database.cpp
+ * Written by Oleh Bielov
+ */
 using namespace std;
 
 const int ids[5] = {1000, 1001, 1002, 1003, 1004};

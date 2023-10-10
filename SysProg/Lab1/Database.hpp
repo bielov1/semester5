@@ -8,7 +8,10 @@
 #include <iomanip>
 #include "Employee.hpp"
 
-
+/*
+ * Database.hpp
+ * Written by Oleh Bielov
+ */
 namespace Records{
 	class Database
 	{

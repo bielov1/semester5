@@ -2,7 +2,10 @@
 #define _EMPLOYEE_HPP
 
 #include <iostream>
-
+/*
+ * Employee.hpp
+ * Written by Oleh Bielov
+ */
 namespace Records
 {
 	class Employee
