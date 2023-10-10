@@ -16,19 +16,19 @@ namespace Records{
 	public:
     	Database();
       	~Database();
-		#if 1
+        
         void updateEmployeesInfo(int inEmployeesId);
         Employee* addEmployee();
         int findIds();
         void listAllEmployees();
+        int findRole();
         void doFireEmployee(int inEmployeesId);
-		#else
-        void updateEmployeesInfo();
-        void addEmployee();
-        #endif
+        Employee* readEmployeeDetails();
+        int long getPositiveNumber(const std::string &prompt);
     protected:
         Employee* mEmployees[kMaxEmployees];
         int nextEmployeesNumber;
+        int classifiers[5];
         int nextSlot;
 	};
 }

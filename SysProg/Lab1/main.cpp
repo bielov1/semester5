@@ -49,8 +49,8 @@ int main()
             emId = myDB.findIds();
             myDB.doFireEmployee(emId);
             break;
-        case 5:
-            cout << "Shutting down..." << endl;
+        case 0:
+            done = true;
             break;
         default:
             cout << "Unknown choice" << endl;

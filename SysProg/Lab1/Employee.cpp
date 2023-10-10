@@ -10,9 +10,12 @@ namespace Records
     Employee::Employee()
     {
 	    FirstAndLastName = "";
+        Address = "";
+        Gender = "";
         age = -1;
         Salary = -1;
         EmployeesId = 1000;
+        passpdetails = 0;
         fHired = false;
     }
 
@@ -34,6 +37,26 @@ namespace Records
     void Employee :: setAge(int inSetAge)
     {
 		age = inSetAge;
+    }
+
+    void Employee :: setGender(std::string gen)
+    {
+		Gender = gen;
+    }
+
+    void Employee :: setAddress(std::string addr)
+    {
+		Address = addr;
+    }
+
+    void Employee :: setRole(int role)
+    {
+		Role = role;
+    }
+
+    void Employee :: setPasspDetails(long int pd)
+    {
+		passpdetails = pd;
     }
 
     void Employee :: hire()
@@ -89,5 +112,25 @@ namespace Records
     bool Employee :: isHired()
     {
 		return fHired;
+    }
+
+    std::string Employee :: getEmployeesGeneder()
+    {
+		return Gender;
+    }
+
+    std::string Employee :: getEmployeesAddress()
+    {
+		return Address;
+    }
+
+    int Employee :: getEmployeesRole()
+    {
+		return Role;
+    }
+
+    long int Employee :: getEmployeesPasspDetails()
+    {
+		return passpdetails;
     }
 }
