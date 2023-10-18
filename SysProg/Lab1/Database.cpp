@@ -159,9 +159,7 @@ namespace Records
 					break;
                 }
                 }
-            } else {
-                    cout << "Unfortunately employee with id " << inEmployeesId << "is fired" << endl;
-            	}
+            } 
         }
     }
 
