@@ -1,2 +1,2 @@
-lab1: lab1.py
-	python lab1.py
+main: main.py
+	python main.py
