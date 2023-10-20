@@ -68,6 +68,14 @@ def generate_graph(n, ke):
 	plt.show()
 
 if __name__ == '__main__':
-	n = int(input("Enter n: "))
-	kill_e = int(input("Enter number of edges to remove: "))
+	while True:
+		try:
+			n = int(input("Enter n: "))
+			kill_e = int(input("Enter number of edges to remove: "))
+			if(n < 0 or kill_e < 0):
+				print("Something went wrong. Please, enter positive number for values ")
+			else:
+				break
+		except ValueError:
+			print("Panic! wrong input")
 	generate_graph(n, kill_e)
