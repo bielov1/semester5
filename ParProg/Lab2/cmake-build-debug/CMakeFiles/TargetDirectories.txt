@@ -1,0 +1,3 @@
+G:/Gbin/SemesterFifth/ParProg/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir
+G:/Gbin/SemesterFifth/ParProg/Lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/Gbin/SemesterFifth/ParProg/Lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
