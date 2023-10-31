@@ -15,8 +15,7 @@
 namespace Records{
 	class Database
 	{
-	    const static int kMaxEmployees = 10;
-        const static int kFirstEmployeesNumber = 1000;
+	    const static int kMaxEmployees = 50;
 	public:
     	Database();
       	~Database();
@@ -32,7 +31,6 @@ namespace Records{
         void  useExistingData();
     protected:
         Employee* mEmployees[kMaxEmployees];
-        int nextEmployeesNumber;
         int classifiers[5];
         int nextSlot;
 	};

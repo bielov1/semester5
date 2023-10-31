@@ -11,8 +11,7 @@
  * Written by Oleh Bielov
  */
 using namespace std;
-
-const int ids[5] = {1000, 1001, 1002, 1003, 1004};
+static int id = 1000;
 const string fnames[5] = {"Oleh Bielov", "Anna Vlada", "Vlad Vlad", "Olga Kivi", "Danya Doom"};
 const int ages[5] = {21, 23, 91, 71, 24};
 const int sals[5] = {10000, 12000, 41000, 71111, 50000};
@@ -23,12 +22,10 @@ const long int pds[5] = {100010001100, 921019917777, 929292929292, 100055551000,
 
 namespace Records
 {
-    int nextEmployeesNumber;
     int nextSlot;
     Database::Database()
     {
         
-        nextEmployeesNumber = kFirstEmployeesNumber;
         nextSlot = 0;
     }
 
@@ -172,16 +169,13 @@ namespace Records
         }
 
         Employee* theEmployee = readEmployeeDetails();
-        mEmployees[nextSlot] = theEmployee;
-
-        static int id = 1000;
+        mEmployees[nextSlot++] = theEmployee;
+        
         for(int i = 0; i < nextSlot; ++i){
 			if(id == mEmployees[i]->getEmployeesId())
                 id++;
         }
         theEmployee->setEmployeesId(id);
-        
-        nextSlot++;
         return theEmployee;
     }	
 
@@ -300,7 +294,7 @@ namespace Records
     {
 	    for(int i = 0; i < 5; ++i){
         	Employee* theEmployee = new Employee;
-        	theEmployee->setEmployeesId(ids[i]);
+        	theEmployee->setEmployeesId(id++);
         	theEmployee->setFirstAndLastName(fnames[i]);
         	theEmployee->setAge(ages[i]);
         	theEmployee->setSalary(sals[i]);
