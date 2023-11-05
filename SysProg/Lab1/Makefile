@@ -1,7 +1,7 @@
 CXX = g++
-CXXFLAGS= -Wall -Wextra -std=c++17 -pedantic
+CXXFLAGS= -Wall -Wextra -std=c++11 -pedantic
 
-.PHONY:all
+.PHONY: all
 
 all: main run
 
