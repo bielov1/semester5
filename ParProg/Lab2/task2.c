@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //
 // Created by Oleg on 03.11.2023.
 //
@@ -87,12 +86,3 @@ void T2(){
 
     printf("T2 is finished\n");
 }
-=======
-#include "Database.h"
-#include <stdio.h>
-void T2()
-{
-	printf("T2 is started\n");
-    printf("T2 is finished\n");
-}
->>>>>>> 4b2c8bc630ee0eec4b74e17dd50d9e596dda2f4e
