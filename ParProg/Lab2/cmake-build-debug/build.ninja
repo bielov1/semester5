@@ -55,6 +55,36 @@ build CMakeFiles/Lab2.dir/main.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/
   OBJECT_DIR = CMakeFiles\Lab2.dir
   OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
 
+build CMakeFiles/Lab2.dir/task3.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/SemesterFifth/ParProg/Lab2/task3.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\task3.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+
+build CMakeFiles/Lab2.dir/Database.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/SemesterFifth/ParProg/Lab2/Database.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\Database.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+
+build CMakeFiles/Lab2.dir/task1.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/SemesterFifth/ParProg/Lab2/task1.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\task1.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+
+build CMakeFiles/Lab2.dir/task2.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/SemesterFifth/ParProg/Lab2/task2.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\task2.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+
+build CMakeFiles/Lab2.dir/task4.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/SemesterFifth/ParProg/Lab2/task4.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\task4.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lab2
@@ -63,7 +93,7 @@ build CMakeFiles/Lab2.dir/main.c.obj: C_COMPILER__Lab2_unscanned_Debug G$:/Gbin/
 #############################################
 # Link the executable Lab2.exe
 
-build Lab2.exe: C_EXECUTABLE_LINKER__Lab2_Debug CMakeFiles/Lab2.dir/main.c.obj
+build Lab2.exe: C_EXECUTABLE_LINKER__Lab2_Debug CMakeFiles/Lab2.dir/main.c.obj CMakeFiles/Lab2.dir/task3.c.obj CMakeFiles/Lab2.dir/Database.c.obj CMakeFiles/Lab2.dir/task1.c.obj CMakeFiles/Lab2.dir/task2.c.obj CMakeFiles/Lab2.dir/task4.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lab2.dir
