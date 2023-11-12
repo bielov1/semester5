@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 import com.google.common.hash.Hashing;
 
 public class Blockchain {
-	List<Block> chainBOD = new ArrayList<>();
-	List<Transaction> currentTransactionsBOD = new ArrayList<>();
+	private List<Block> chainBOD = new ArrayList<>();
+	private List<Transaction> currentTransactionsBOD = new ArrayList<>();
 	
 	public Blockchain() {
 		newBlockBOD(1, "BIELOV0000000000000000000000000000000000000000000000000022112003");

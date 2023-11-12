@@ -22,16 +22,21 @@ public class Main {
 		//System.out.println("The solution for proof  = " + MyBlockchain.proofOfWorkBOD(x));
 		//System.out.println(Hashing.sha256().hashString(Integer.toString((104 * x)), Charsets.UTF_8).toString());
 		
-		for(int i = 0 ; i < 4; ++i) {
-			MyBlockchain.newBlockBOD(1, MyBlockchain.chainBOD.get(i).getPreviousHashBOD());
-		}
-		
-		for(int j = 0; j < 5; ++j) {
+		int count = 0;
+		System.out.println("hash for " 
+				   + MyBlockchain.lastBlockBOD().getIndexBOD()
+				   + " block: "
+				   + Blockchain.hashBOD(MyBlockchain.lastBlockBOD()));
+		do {
+			MyBlockchain.newBlockBOD(1, MyBlockchain.lastBlockBOD().getPreviousHashBOD());
 			System.out.println("hash for " 
-							   + MyBlockchain.chainBOD.get(j).getIndexBOD()
-							   + " block: "
-							   + Blockchain.hashBOD(MyBlockchain.chainBOD.get(j)));
-		}
+					   + MyBlockchain.lastBlockBOD().getIndexBOD()
+					   + " block: "
+					   + Blockchain.hashBOD(MyBlockchain.lastBlockBOD()));
+	
+			count++;
+			
+		} while (count < 4);
 		
 		// Підтвердження доказу
 		int x = 2003;
@@ -40,5 +45,6 @@ public class Main {
 		System.out.println("The solution for proof = " + myProof);
 		System.out.println(Hashing.sha256().hashString(Integer.toString(x) + Integer.toString(myProof), 
 													   Charsets.UTF_8).toString());
+		
 	}
 }
