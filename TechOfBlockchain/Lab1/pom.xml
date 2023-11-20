@@ -5,10 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
 	  <dependency>
-		  <groupId>com.sparkjava</groupId>
-		  <artifactId>spark-core</artifactId>
-		  <version>2.6.0</version>
-	  </dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-core</artifactId>
+            <version>2.6.0</version>
+      </dependency>
 	  <dependency>
 		  <groupId>com.google.guava</groupId>
 		  <artifactId>guava</artifactId>

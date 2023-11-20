@@ -39,7 +39,7 @@ public class Main {
 		} while (count < 4);
 		
 		// Підтвердження доказу
-		int x = 2003;
+		int x = 0x22112003;
 		int myProof = MyBlockchain.proofOfWorkBOD(x);
 		System.out.println();
 		System.out.println("The solution for proof = " + myProof);

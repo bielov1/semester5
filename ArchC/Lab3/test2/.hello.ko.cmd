@@ -1,0 +1,1 @@
+cmd_/home/oda/repos/test2/hello.ko := arm-eabi-ld -r -EL -z noexecstack -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/oda/repos/test2/hello.ko /home/oda/repos/test2/hello.o /home/oda/repos/test2/hello.mod.o ;  true
