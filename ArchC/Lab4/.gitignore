@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!hello1.c
+!hello2.c
+!hello1.ko
+!hello2.ko
+!Makefile
+!Kbuild
