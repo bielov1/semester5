@@ -35,7 +35,7 @@ int displayMenu()
     cin >> selection;
 
     return selection;
-}	
+}
 
 
 int main()
@@ -49,8 +49,8 @@ int main()
         switch(selection){
         case 1:
 			emId = myDB.findIds();
-            myDB.updateEmployeesInfo(emId);
             break;
+            myDB.updateEmployeesInfo(emId);
         case 2:
             myDB.listAllEmployees();
             break;
@@ -70,7 +70,7 @@ int main()
         default:
             cout << "Unknown choice" << endl;
         }
-        
+
     }
     return 0;
-}	
+}
