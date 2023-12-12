@@ -2,6 +2,7 @@
 #include <string>
 #include <limits>
 #include <iomanip>
+#include <QMessageBox>
 #include "Database.hpp"
 #include <map>
 
@@ -25,10 +26,103 @@ Database::~Database()
     std::cout << "Shutting down..." << std::endl;
 }
 
-void Database::updateEmployeeField(int employeeId, int column, const QString &value) {
 
-
+void Database::updateEmployeeId(int employeeId, int id) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setEmployeesId(id);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
 }
+
+void Database::updateEmployeeAge(int employeeId, int newAge) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setAge(newAge);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::updateEmployeeSalary(int employeeId, int salary) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setSalary(salary);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::updateEmployeeGender(int employeeId, const std::string& gender) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setGender(gender);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::updateEmployeeName(int employeeId, const std::string& newName) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setFirstAndLastName(newName);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::updateEmployeeAddress(int employeeId, const std::string& address) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setAddress(address);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::updateEmployeeRole(int employeeId, const std::string& role) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setRole(role);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::updateEmployeePD(int employeeId, int pd) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            mEmployees[i]->setPasspDetails(pd);
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
+void Database::isEmployeed(int employeeId, int hire) {
+    for (int i = 0; i < nextSlot; ++i) {
+        if (mEmployees[i]->getEmployeesId() == employeeId) {
+            if(hire == 1) {
+                    mEmployees[i]->hire();
+            } else if (hire == 0) {
+                mEmployees[i]->fire();
+            } else {
+                std::cerr << "Please select a cell to update." << std::endl;
+            }
+            return;
+        }
+    }
+    std::cerr << "Employee with ID " << employeeId << " not found." << std::endl;
+}
+
 void Database::addEmployee(const std::string& name, int age, const std::string& address, int salary, const std::string& gender, long int passportDetails, const std::string& role) {
     if (nextSlot >= kMaxEmployees) {
         cerr << "There is no more room to add the new employee!" << endl;
@@ -45,35 +139,26 @@ void Database::addEmployee(const std::string& name, int age, const std::string& 
     newEmployee->setRole(role);
     newEmployee->hire();
 
-    int newEmployeeId = ++lastEmployeeId;
+    for(int i = 0; i < nextSlot; i++) {
+        if(mEmployees[i]->getEmployeesId() > lastEmployeeId) {
+            lastEmployeeId = mEmployees[i]->getEmployeesId();
+        }
+    }
+
+    int newEmployeeId = lastEmployeeId + 1;
     newEmployee->setEmployeesId(newEmployeeId);
 
     mEmployees[nextSlot++] = newEmployee;
 }
 
 
-
-void Database::doFireEmployee(int inEmployeesId)
-{
-    for(int i = 0; i < nextSlot; ++i){
-        if(mEmployees[i]->getEmployeesId() == inEmployeesId)
-            mEmployees[i]->fire();
-    }
-
-}
-
 void Database::listAllEmployees(QTableWidget *table) {
-    // Clear the table before populating it
     table->setRowCount(0);
-
-
-    // Set table headers
     table->setColumnCount(9);
     table->setHorizontalHeaderLabels(QStringList() << "ID" << "Name" << "Age" << "Salary"
                                                    << "Gender" << "Address" << "Classifier"
                                                    << "Passport details" << "Hired");
 
-    // Loop through employees and add data to the table
     for (int i = 0; i < nextSlot; ++i) {
         table->insertRow(i);
         table->setItem(i, 0, new QTableWidgetItem(QString::number(mEmployees[i]->getEmployeesId())));

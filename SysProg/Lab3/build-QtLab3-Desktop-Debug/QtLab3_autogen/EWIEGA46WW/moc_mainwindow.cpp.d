@@ -88,6 +88,7 @@
   /home/oda/anaconda3/include/qt/QtGui/qwindowdefs.h \
   /home/oda/anaconda3/include/qt/QtWidgets/QMainWindow \
   /home/oda/anaconda3/include/qt/QtWidgets/QTableWidget \
+  /home/oda/anaconda3/include/qt/QtWidgets/QTableWidgetItem \
   /home/oda/anaconda3/include/qt/QtWidgets/qabstractitemdelegate.h \
   /home/oda/anaconda3/include/qt/QtWidgets/qabstractitemview.h \
   /home/oda/anaconda3/include/qt/QtWidgets/qabstractscrollarea.h \

@@ -4,6 +4,7 @@
 
 #include <QMainWindow>
 #include <QTableWidget>
+#include <QTableWidgetItem>
 #include "Database.hpp"
 
 class MainWindow : public QMainWindow {
@@ -21,7 +22,7 @@ private slots:
 private:
     Records::Database myDB;
     QTableWidget* table;
-    // Other private members if needed
+     int selectedEmployeeId;
 };
 
 #endif // MAINWINDOW_H

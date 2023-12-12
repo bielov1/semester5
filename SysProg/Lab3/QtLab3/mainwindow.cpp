@@ -3,6 +3,7 @@
 #include <QtWidgets>
 #include <QTableWidget>
 
+
 using namespace std;
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), myDB() {
@@ -21,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), myDB() {
                                                                                                    <<"PassportDetails"
                                                                                                    << "Role");
     table->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    table->setEditTriggers(QAbstractItemView::DoubleClicked | QAbstractItemView::AnyKeyPressed);
     layout->addWidget(table);
     this->table = table;
 
@@ -35,6 +37,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), myDB() {
     connect(addButton, &QPushButton::clicked, this, &MainWindow::addEmployee);
     connect(updateButton, &QPushButton::clicked, this, &MainWindow::updateEmployee);
     connect(listButton, &QPushButton::clicked, this, &MainWindow::listEmployees);
+
+
 
 
     setCentralWidget(centralWidget);
@@ -92,9 +96,57 @@ void MainWindow::addEmployee() {
 
 
 void MainWindow::updateEmployee() {
+    QTableWidgetItem *selectedItem = table->selectedItems().isEmpty() ? nullptr : table->selectedItems().first();
 
+    if (selectedItem) {
+        int employeeId = table->item(selectedItem->row(), 0)->text().toInt();
+        int column = selectedItem->column();
+
+        bool ok;
+        QString newText = QInputDialog::getText(this, tr("Update Employee"),
+                                                tr("Enter new value:"), QLineEdit::Normal,
+                                                selectedItem->text(), &ok);
+        if (ok && !newText.isEmpty()) {
+            switch (column) {
+            case 0: // Айді
+                myDB.updateEmployeeId(employeeId, newText.toInt());
+                break;
+            case 1: // Ім'я
+                myDB.updateEmployeeName(employeeId, newText.toStdString());
+                break;
+            case 2: //  Вік
+                myDB.updateEmployeeAge(employeeId, newText.toInt());
+                break;
+                // додайте обробку для інших стовпців
+            case 3: //  зарплата
+                myDB.updateEmployeeSalary(employeeId, newText.toInt());
+                break;
+            case 4: // Гендер
+                myDB.updateEmployeeGender(employeeId, newText.toStdString());
+                break;
+            case 5: // Адреса
+                myDB.updateEmployeeAddress(employeeId, newText.toStdString());
+                break;
+            case 6: // Посада
+                myDB.updateEmployeeRole(employeeId, newText.toStdString());
+                break;
+            case 7: // Паспортні дані
+                myDB.updateEmployeePD(employeeId, newText.toInt());
+                break;
+            case 8: // Звільнення
+                myDB.isEmployeed(employeeId, newText.toInt());
+                break;
+            }
+            // Оновлюємо відображення у таблиці
+            selectedItem->setText(newText);
+        }
+    } else {
+        QMessageBox::warning(this, tr("Selection Error"),
+                             tr("Please select a cell to update."));
+    }
 }
 
 void MainWindow::listEmployees() {
     myDB.listAllEmployees(table);
 }
+
