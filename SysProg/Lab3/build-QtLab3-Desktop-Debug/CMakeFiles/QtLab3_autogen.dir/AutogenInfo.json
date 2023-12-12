@@ -1,0 +1,189 @@
+{
+	"BUILD_DIR" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen",
+	"CMAKE_BINARY_DIR" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3",
+	"CMAKE_EXECUTABLE" : "/home/oda/Software/Qt/Tools/CMake/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/CMakeLists.txt",
+		"/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/.qtc/package-manager/auto-setup.cmake",
+		"/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake",
+		"/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/UnixPaths.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/Clang-CXX.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/Clang.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-Clang-CXX.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5/Qt5Config.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5/Qt5Config.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfigVersion.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfig.cmake",
+		"/home/oda/anaconda3/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsMacros.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeParseArguments.cmake",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3",
+	"DEP_FILE" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "QtLab3_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/Database.hpp",
+			"MU",
+			"EWIEGA46WW/moc_Database.cpp",
+			null
+		],
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/Employee.hpp",
+			"MU",
+			"EWIEGA46WW/moc_Employee.cpp",
+			null
+		],
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/oda/anaconda3/include/qt",
+		"/home/oda/anaconda3/include/qt/QtWidgets",
+		"/home/oda/anaconda3/include/qt/QtGui",
+		"/home/oda/anaconda3/include/qt/QtCore",
+		"/home/oda/anaconda3/mkspecs/linux-g++",
+		"/usr/include",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/llvm-14/lib/clang/14.0.0/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/lib/ccache/clang++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/home/oda/Software/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/home/oda/anaconda3/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/home/oda/anaconda3/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/Database.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/Employee.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/mainwindow.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

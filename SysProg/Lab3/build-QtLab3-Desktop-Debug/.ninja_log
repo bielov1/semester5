@@ -1,0 +1,26 @@
+# ninja log v5
+5	27	1702391994342600247	QtLab3_autogen/timestamp	760b518de63d6a82
+5	27	1702391994342600247	/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/timestamp	760b518de63d6a82
+42	7350	1702392001634676322	CMakeFiles/QtLab3.dir/mainwindow.cpp.o	a20a230efb40ebd2
+5	27	1702391994342600247	QtLab3_autogen/mocs_compilation.cpp	760b518de63d6a82
+28	42	1702391992598582049	CMakeFiles/QtLab3_en_US.ts_lst_file	77d486c2ac11fc46
+5	27	1702391994342600247	/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/mocs_compilation.cpp	760b518de63d6a82
+28	42	1702391992598582049	/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/QtLab3_en_US.ts	77d486c2ac11fc46
+507	5221	1702388798947595274	CMakeFiles/QtLab3.dir/QtLab3_autogen/mocs_compilation.cpp.o	dd1786e017d33946
+28	42	1702391992598582049	/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3_en_US.ts_lst_file	77d486c2ac11fc46
+508	4994	1702388798707592802	CMakeFiles/QtLab3.dir/main.cpp.o	a2d879cc2ecfb20e
+7350	7890	1702392002198682206	QtLab3	44a8d77ca4b6e94c
+27	2548	1702388727774858316	CMakeFiles/QtLab3.dir/Employee.cpp.o	636c0572af342664
+44	4848	1702388744583033122	CMakeFiles/QtLab3.dir/Database.cpp.o	e0a8ed7244cd1f32
+5	554	1702392199492734028	QtLab3_autogen/timestamp	760b518de63d6a82
+5	554	1702392199492734028	QtLab3_autogen/mocs_compilation.cpp	760b518de63d6a82
+5	554	1702392199492734028	/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/timestamp	760b518de63d6a82
+5	554	1702392199492734028	/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/QtLab3_autogen/mocs_compilation.cpp	760b518de63d6a82
+554	567	1702392198564724403	/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3/QtLab3_en_US.ts	77d486c2ac11fc46
+554	567	1702392198564724403	CMakeFiles/QtLab3_en_US.ts_lst_file	77d486c2ac11fc46
+554	567	1702392198564724403	/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3_en_US.ts_lst_file	77d486c2ac11fc46
+567	5939	1702392204864789745	CMakeFiles/QtLab3.dir/QtLab3_autogen/mocs_compilation.cpp.o	dd1786e017d33946
+571	6029	1702392204948790616	CMakeFiles/QtLab3.dir/Database.cpp.o	e0a8ed7244cd1f32
+568	6223	1702392205140792608	CMakeFiles/QtLab3.dir/main.cpp.o	a2d879cc2ecfb20e
+569	8658	1702392207580817912	CMakeFiles/QtLab3.dir/mainwindow.cpp.o	a20a230efb40ebd2
+8658	9005	1702392207944821687	QtLab3	44a8d77ca4b6e94c

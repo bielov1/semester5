@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-66ea3505f67835924de7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QtLab3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "QtLab3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtLab3-Debug-4fdeac74d058a7f68f28.json",
+					"name" : "QtLab3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtLab3_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtLab3_autogen-Debug-bc5c0031a6d39b39fea4.json",
+					"name" : "QtLab3_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtLab3_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtLab3_autogen_timestamp_deps-Debug-a2c5b844e362d3c7263c.json",
+					"name" : "QtLab3_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug",
+		"source" : "/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,9 @@
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/install.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/install/local.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/install/strip.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3_autogen_timestamp_deps.dir
+/home/oda/Programming/oda/semester5/SysProg/Lab3/build-QtLab3-Desktop-Debug/CMakeFiles/QtLab3_autogen.dir
