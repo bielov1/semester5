@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include "Database.hpp"
 #include <map>
+#include <fstream>
 
 
 /*
@@ -26,6 +27,38 @@ Database::~Database()
     std::cout << "Shutting down..." << std::endl;
 }
 
+
+void Database::save(const std::string& filePath) {
+    std::ofstream outFile(filePath);
+    if (!outFile.is_open()) {
+        std::cerr << "Не вдалося відкрити файл для запису." << std::endl;
+        return;
+    }
+
+    outFile << std::left << std::setw(10) << "ID" << ","
+            << std::setw(20) << "Name" << ","
+            << std::setw(5) << "Age" << ","
+            << std::setw(15) << "Address" << ","
+            << std::setw(10) << "Salary" << ","
+            << std::setw(10) << "Gender" << ","
+            << std::setw(20) << "Passport Details" << ","
+            << std::setw(15) << "Role" << ","
+            << std::setw(5) << "Hired" << "\n";
+    for (int i = 0; i < nextSlot; ++i) {
+        Employee* emp = mEmployees[i];
+        outFile << std::left << std::setw(10) << emp->getEmployeesId() << ","
+                << std::setw(20) << emp->getFirstAndLastName() << ","
+                << std::setw(5) << emp->getAge() << ","
+                << std::setw(30) << emp->getEmployeesAddress() << ","
+                << std::setw(10) << emp->getSalary() << ","
+                << std::setw(10) << emp->getEmployeesGeneder() << ","
+                << std::setw(20) << emp->getEmployeesPasspDetails() << ","
+                << std::setw(15) << emp->getEmployeesRole() << ","
+                << std::setw(5) << (emp->isHired() ? "Yes" : "No") << "\n";
+    }
+
+    outFile.close();
+}
 
 void Database::updateEmployeeId(int employeeId, int id) {
     for (int i = 0; i < nextSlot; ++i) {

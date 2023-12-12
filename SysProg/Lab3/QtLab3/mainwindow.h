@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QTableWidget>
 #include <QTableWidgetItem>
+#include <QTextEdit>
 #include "Database.hpp"
 
 class MainWindow : public QMainWindow {
@@ -18,10 +19,12 @@ private slots:
     void addEmployee();
     void updateEmployee();
     void listEmployees();
+    void saveFile();
 
 private:
     Records::Database myDB;
     QTableWidget* table;
+    QTextEdit *textEdit;
      int selectedEmployeeId;
 };
 

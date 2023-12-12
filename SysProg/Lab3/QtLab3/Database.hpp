@@ -20,6 +20,7 @@ public:
     Database();
     ~Database();
 
+    void save(const std::string& filePath);
     void addEmployee(const std::string& name,
                      int age, const std::string& address,
                      int salary, const std::string& gender,

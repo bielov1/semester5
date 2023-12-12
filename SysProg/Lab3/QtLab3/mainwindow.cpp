@@ -2,6 +2,7 @@
 #include "Database.hpp"
 #include <QtWidgets>
 #include <QTableWidget>
+#include <QFileDialog>
 
 
 using namespace std;
@@ -27,18 +28,22 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), myDB() {
     this->table = table;
 
 
-
     QPushButton *addButton = new QPushButton("Add Employee", centralWidget);
     QPushButton *updateButton = new QPushButton("Update Employee", centralWidget);
     QPushButton *listButton = new QPushButton("List Employees", centralWidget);
+    QPushButton *saveButton = new QPushButton("Save File", this);
+
+
     layout->addWidget(addButton);
     layout->addWidget(updateButton);
     layout->addWidget(listButton);
+    layout->addWidget(saveButton);
+
+
     connect(addButton, &QPushButton::clicked, this, &MainWindow::addEmployee);
     connect(updateButton, &QPushButton::clicked, this, &MainWindow::updateEmployee);
     connect(listButton, &QPushButton::clicked, this, &MainWindow::listEmployees);
-
-
+    connect(saveButton, &QPushButton::clicked, this, &MainWindow::saveFile);
 
 
     setCentralWidget(centralWidget);
@@ -148,5 +153,17 @@ void MainWindow::updateEmployee() {
 
 void MainWindow::listEmployees() {
     myDB.listAllEmployees(table);
+}
+
+
+void MainWindow::saveFile() {
+    QString fileName = QFileDialog::getOpenFileName(this, "Open the file", "/home/oda/Programming/oda/semester5/SysProg/Lab3/QtLab3", "Text files (*.txt);;All files (*.*)");
+    if (!fileName.isEmpty()) {
+        QFile myFile(fileName);
+        if (myFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            myDB.save(fileName.toStdString());
+            myFile.close();
+        }
+    }
 }
 

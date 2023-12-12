@@ -87,6 +87,7 @@ QtLab3_autogen/timestamp: \
 	/home/oda/anaconda3/include/qt/QtCore/qsystemdetection.h \
 	/home/oda/anaconda3/include/qt/QtCore/qtcore-config.h \
 	/home/oda/anaconda3/include/qt/QtCore/qtypeinfo.h \
+	/home/oda/anaconda3/include/qt/QtCore/qurl.h \
 	/home/oda/anaconda3/include/qt/QtCore/qvariant.h \
 	/home/oda/anaconda3/include/qt/QtCore/qvarlengtharray.h \
 	/home/oda/anaconda3/include/qt/QtCore/qvector.h \
@@ -103,12 +104,17 @@ QtLab3_autogen/timestamp: \
 	/home/oda/anaconda3/include/qt/QtGui/qmatrix.h \
 	/home/oda/anaconda3/include/qt/QtGui/qpaintdevice.h \
 	/home/oda/anaconda3/include/qt/QtGui/qpalette.h \
+	/home/oda/anaconda3/include/qt/QtGui/qpen.h \
 	/home/oda/anaconda3/include/qt/QtGui/qpixelformat.h \
 	/home/oda/anaconda3/include/qt/QtGui/qpixmap.h \
 	/home/oda/anaconda3/include/qt/QtGui/qpolygon.h \
 	/home/oda/anaconda3/include/qt/QtGui/qregion.h \
 	/home/oda/anaconda3/include/qt/QtGui/qrgb.h \
 	/home/oda/anaconda3/include/qt/QtGui/qrgba64.h \
+	/home/oda/anaconda3/include/qt/QtGui/qtextcursor.h \
+	/home/oda/anaconda3/include/qt/QtGui/qtextdocument.h \
+	/home/oda/anaconda3/include/qt/QtGui/qtextformat.h \
+	/home/oda/anaconda3/include/qt/QtGui/qtextoption.h \
 	/home/oda/anaconda3/include/qt/QtGui/qtgui-config.h \
 	/home/oda/anaconda3/include/qt/QtGui/qtguiglobal.h \
 	/home/oda/anaconda3/include/qt/QtGui/qtransform.h \
@@ -117,6 +123,7 @@ QtLab3_autogen/timestamp: \
 	/home/oda/anaconda3/include/qt/QtWidgets/QMainWindow \
 	/home/oda/anaconda3/include/qt/QtWidgets/QTableWidget \
 	/home/oda/anaconda3/include/qt/QtWidgets/QTableWidgetItem \
+	/home/oda/anaconda3/include/qt/QtWidgets/QTextEdit \
 	/home/oda/anaconda3/include/qt/QtWidgets/qabstractitemdelegate.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qabstractitemview.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qabstractscrollarea.h \
@@ -133,6 +140,7 @@ QtLab3_autogen/timestamp: \
 	/home/oda/anaconda3/include/qt/QtWidgets/qtableview.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qtablewidget.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qtabwidget.h \
+	/home/oda/anaconda3/include/qt/QtWidgets/qtextedit.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qtwidgets-config.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qtwidgetsglobal.h \
 	/home/oda/anaconda3/include/qt/QtWidgets/qwidget.h \
